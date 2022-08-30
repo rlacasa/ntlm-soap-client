@@ -15,6 +15,7 @@ trait NTLMRequest
      * @version 1.0
      * @date    2016-11-15
      */
+    #[\ReturnTypeWillChange]
     public function __doRequest($request, $location, $action, $version, $one_way = null)
     {
         $auth = NTLMConfig::getAuthString();
